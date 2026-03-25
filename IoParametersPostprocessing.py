@@ -72,36 +72,36 @@ class ParametersPostprocessing:
         self.plot(self.foF2,markersize=5,color='red',name="foF2")
         self.plot(self.foF2_filtered,markersize=5,color='blue',lim1=self.lim1_F2,lim2=self.lim2_F2,name="foF2")
         self.save_fig(name="foF2")
-        plt.show()
+        plt.close()
         
         self.plot(self.foF1_spline,markersize=2,color='red',name="foF1")
         self.plot(self.foF1,markersize=5,color='red',name="foF1")
         self.plot(self.foF1_filtered,markersize=5,color='blue',lim1=self.lim1_F1,lim2=self.lim2_F1,name="foF1")
         self.save_fig(name="foF1")
-        plt.show()
+        plt.close()
         
         self.plot(self.foE_spline,markersize=2,color='red',name="foE")
         self.plot(self.foE,markersize=5,color='red',name="foE")
         self.plot(self.foE_filtered,markersize=5,color='blue',lim1=self.lim1_E,lim2=self.lim2_E,name="foE")
         self.save_fig(name="foE")
-        plt.show()
+        plt.close()
         
         self.plot(self.hF,markersize=5,color='blue',name="hF")
         self.save_fig(name="hF")
-        plt.show()
+        plt.close()
         
         self.plot(self.fmin,markersize=5,color='blue',name="fmin")
         self.save_fig(name="fmin")
-        plt.show()
+        plt.close()
         
         self.plot(self.fbEs,markersize=5,color='blue',name="fbEs")
         self.save_fig(name="fbEs")
-        plt.show()
+        plt.close()
         
         self.plot(self.hE,markersize=5,color='red',name="hE")
         self.plot(self.hE_filtered,markersize=5,color='blue',lim1=self.lim1_E,lim2=self.lim2_E,name="hE")
         self.save_fig(name="hE")
-        plt.show()
+        plt.close()
         
         
     def FilterParameters(self,array,std_lim=0.3,offtrend=False):
